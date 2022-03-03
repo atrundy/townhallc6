@@ -1,13 +1,13 @@
 /* the styles for the elements */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html {
-	background-color: white;
+    background-color: white;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 800px;
     margin: 0 auto;
@@ -15,112 +15,401 @@ body {
     background-color: #fffded;
 }
 a:focus, a:hover {
-	font-style: italic;
+    font-style: italic;
 }
 /* the styles for the header */
 header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    padding: 1.5em 0 2em 0;
+    border-bottom: 3px solid #931420;
+        background-image: -moz-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -webkit-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -o-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 header h2 {
-	font-size: 175%;
-	color: #800000;
+    font-size: 175%;
+    color: #800000;
 }
 header h3 {
-	font-size: 130%;
-	font-style: italic;
+    font-size: 130%;
+    font-style: italic;
 }
 header img {
-	float: left;
-	padding: 0 30px;
+    float: left;
+    padding: 0 30px;
 }
 .shadow {
-	text-shadow: 2px 2px 2px #800000;
+    text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the section */
 section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
+    width: 525px;
+    float: right;
+    padding: 0 20px 20px 20px;
 }
 section h1 {
-	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: 0;
+    font-size: 150%;
+    padding: .5em 0 .25em 0;
+    margin: 0;
 }
 section h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
 }
 section p {
-	padding-bottom: .5em;
+    padding-bottom: .5em;
 }
 section blockquote {
-	padding: 0 2em;
-	font-style: italic;
+    padding: 0 2em;
+    font-style: italic;
 }
 section ul {
-	padding: 0 0 .25em 1.25em;
+    padding: 0 0 .25em 1.25em;
 }
 section li {
-	padding-bottom: .35em;
+    padding-bottom: .35em;
+}
+#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+main ul {
+    list-style: circle;
 }
 
 /* the styles for the article */
 article {
-	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
+    padding: .5em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
 }
 article h2 {
-	padding-top: 0;
+    padding-top: 0;
 }
 article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
+    font-size: 105%;
+    padding-bottom: .25em;
 }
 article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
+    float: right;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
 }
 
 /* the styles for the aside */
 aside {
-	width: 215px;
-	float: right;
-	padding: 0 0 20px 20px;
+    width: 215px;
+    float: right;
+    padding: 0 0 20px 20px;
 }
 aside h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
 }
 aside h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
+    font-size: 105%;
+    padding-bottom: .25em;
 }
 aside img {
-	padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 /* the styles for the footer */
 footer {
-	background-color: #931420;
-	clear: both;
+    background-color: #931420;
+    clear: both;
 
 }
 footer p {
-	text-align: center;
-	color: white;
-	padding: 1em 0;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+
+
+c7_sampson.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/c6_speaker.css">
+</head>
+
+<body>
+    <header>
+        <img src="../images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="speakers/c7_sampson.html">Speakers</a></li>
+            <li><a href="index.html">Luncheons</a></li>
+            <li><a href="index.html">Tickets</a></li>
+            <li><a href="index.html">About Us</a>
+                <ul>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Past Speakers</a></li>
+                    <li><a href="#">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Fossil Threads in the Web of Life</h1>
+            <article>
+                <img src="../images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur">
+                <h2>February<br>Scott Sampson</h2>
+                <p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the 
+                   Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the 
+                   Utah Museum of Natural History, steps to the podium. Sampson's research has focused on the 
+                   ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number 
+                   of countries in Africa.</p>
+                <p>Scott Sampson is a Canadian-born paleontologist who received his Ph.D. in zoology from the 
+                   University of Toronto. His doctoral work focused on two new species of ceratopsids (horned 
+                   dinosaurs) from the Late Cretaceous of Montana, as well as the growth and function of certopsid 
+                   horns and frills.</p>
+                <p>Following graduation in 1993, Sampson spent a year working at the American Museum of Natural 
+                   History in New York City, followed by five years as assistant professor of anatomy at the New 
+                   York College of Osteopathic Medicine on Long Island. He arrived at the University of Utah 
+                   accepting a dual position as assistant professor in the Department of Geology and Geophysics 
+                   and curator of vertebrate paleontology at the Utah Museum of Natural History. His research 
+                   interests largely revolve around the phylogenetics, functional morphology, and evolution of 
+                   Late Cretaceous dinosaurs.</p>
+                <p>In addition to his museum and laboratory-based studies, Sampson has conducted paleontological 
+                   work in Zimbabwe, South Africa, and Madagascar, as well as the United States and Canada. He was 
+                   also the on-air host for the Discovery Channel's Dinosaur Planet and recently completed a book, 
+                   Dinosaur Odyssey: Fossil Threads in the Web of Life, which is one of the most 
+                   comprehensive surveys of dinosaurs and their worlds to date.</p>
+            </article>
+        </section>
+        
+        <aside>
+            <h2>Guest speakers</h2>
+            <h3>October<br><a href="../speakers/brancaccio.html">David Brancaccio</a></h3>
+            <img src="../images/brancaccio75.jpg" alt="David Brancaccio photo">
+            <h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+            <img src="../images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+            <h3>January<br><a href="../speakers/chua.html">Amy Chua</a></h3>
+            <img src="../images/chua75.jpg" alt="Amy Chua photo">
+            <h3>February<br><a href="../speakers/c6_sampson.html">Scott Sampson</a></h3>
+            <img src="../images/sampson75.jpg" alt="Scott Sampson photo">
+            <h3><a href="../index.html">Return to Home page</a></h3>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2022, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+</html>
+
+c6_speaker.css
+
+
+
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: white;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+a:focus, a:hover {
+    font-style: italic;
+}
+/* the styles for the header */
+header {
+    padding: 1.5em 0 2em 0;
+    border-bottom: 3px solid #931420;
+        background-image: -moz-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -webkit-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -o-linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: linear-gradient(
+        30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header h2 {
+    font-size: 150%;
+    color: #800000;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+header img {
+    float: left;
+    padding: 0 30px;
+}
+.shadow {
+    text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the section */
+section {
+    width: 525px;
+    float: right;
+    padding: 0 20px 20px 20px;
+}
+section h1 {
+    font-size: 150%;
+    padding: .5em 0 .25em 0;
+    margin: 0;
+    color: #800000
+}
+section h2 {
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+section p {
+    padding-bottom: .5em;
+}
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+section ul {
+    padding: 0 0 .25em 1.25em;
+}
+section li {
+    padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+    padding: .5em 0;
+}
+article h2 {
+    padding-top: 0;
+}
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+article img {
+    float: right;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+    width: 215px;
+    float: right;
+    padding: 0 0 20px 20px;
+}
+aside h2 {
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+aside img {
+    padding-bottom: 1em;
+}
+#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the footer */
+footer {
+    background-color: #931420;
+    clear: both;
+
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
 }
